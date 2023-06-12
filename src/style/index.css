@@ -1,0 +1,129 @@
+@charset "UTF-8";
+:root {
+  --app-dark-bg: #1a1d28;
+  --app-red: #ff3c57;
+  --app-green: #33ab4e;
+  --app-purple: #833cff;
+  --app-orange: #ff833c;
+  --app-blue: #3c57ff;
+  --app-blue-hover: #364ee6;
+  --app-light-orange: #fe9505;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ------------------- */
+/*   Header            */
+/* ------------------- */
+
+body {
+  background-color: #1a1c24;
+}
+
+header {
+  height: 56px;
+  background-color: #faffff;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.title {
+  width: 40%;
+  height: 56%;
+}
+
+.title h1 {
+  display: flex;
+  font-size: 18px;
+  font-weight: 550;
+  line-height: 56px;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  letter-spacing: 0.2px;
+}
+
+nav {
+  width: 60%;
+  text-align: right;
+  height: 100%;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  line-height: 56px;
+  cursor: default;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  padding: 5px;
+}
+
+nav ul li :hover {
+  background-color: #fe9505;
+}
+nav ul li a {
+  font-size: 17px;
+  color: #000;
+  font-weight: 525;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  font-family: Madefor, Helvetica Neue, Helvetica, Arial,
+    Hiragino Kaku Gothic Pro W3, Hiragino Kaku Gothic Pro, sans-serif !important;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+background-color: #fe9505;
+}
+
+/* --------------- */
+/* Section          */
+/* --------------- */
+.section {
+  height: calc(100vh - 56px - 65px);
+}
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+}
+h2 {
+  color: #faffff;
+}
+p {
+  color: #faffff;
+}
+
+.tutorials li {
+  color: #faffff;
+  height: 100%;
+}
+
+.active {
+  background-color: #fe9505;
+}
+
+/* -------------------------- */
+/* Media queries              */
+/* -------------------------- */
+/*  768 px and down */
+@media (max-width: 768px) {
+  .gallery-div {
+    width: calc(50% - 10px);
+  }
+}
+
+/*  480 px and down */
+@media (max-width: 480px) {
+  .gallery-div {
+    width: 100%;
+  }
+}
