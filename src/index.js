@@ -8,7 +8,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //'Router must be availabel in your entire app. For this reason you need to use it as a wrapper for your components
 root.render(
   <React.StrictMode>
-    <Router>
+
+    <Router basename='/home'>
     <App />
     </Router>
   </React.StrictMode>
